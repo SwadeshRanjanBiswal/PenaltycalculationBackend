@@ -16,4 +16,8 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\WebApplication1ML.Model\WebApplication1ML.Model.csproj" />
+  </ItemGroup>
+
 </Project>
