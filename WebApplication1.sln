@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PenaltyCalculation", "PenaltyCalculation.csproj", "{2925B99C-185A-4755-8BDC-04C586C1D577}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2925B99C-185A-4755-8BDC-04C586C1D577}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2925B99C-185A-4755-8BDC-04C586C1D577}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2925B99C-185A-4755-8BDC-04C586C1D577}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2925B99C-185A-4755-8BDC-04C586C1D577}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2CE1559A-583F-406C-9332-187E3CB94DCA}
+	EndGlobalSection
+EndGlobal
