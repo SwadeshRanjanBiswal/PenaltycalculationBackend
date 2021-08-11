@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PenaltyCalculation.Models;
 using System;
@@ -39,13 +40,25 @@ namespace PenaltyCalculation.Controllers
 
         // POST api/<LoginController>
         [HttpPost]
+        [Produces("application/json")]
+        [Route("GenerateToken")]
         public ResponseVM Post([FromBody] LoginModel loginModel)
         {
-            var objlst = _appDbContext.LoginModel.Select(x => x.Username == loginModel.Username);
-            if (objlst != null)
+            var objlst = _appDbContext.LoginModel.Select(x => x.Username == loginModel.Username && x.Password == loginModel.Password);
+            if (!objlst.FirstOrDefault())
                 return new ResponseVM { Status = "Inactive", Message = "User Inactive." };
             else
-                return new ResponseVM { Status = "Success", Message = TokenManager.GenerateToken(loginModel.Username) };
+            {
+                var userRole = from userdetails in _appDbContext.AccessLevelModel where loginModel.Username == userdetails.Username select userdetails.AccessLevel;
+                return new ResponseVM { Status = "Success", Message = TokenManager.GenerateToken(loginModel.Username, userRole.FirstOrDefault()) };
+            }
+        }
+        [HttpPost]
+        [Produces("application/json")]
+        [Route("ValidateToken")]
+        public string ValidateToken([FromBody] string Token)
+        {
+           return  TokenManager.ValidateToken(Token);
         }
 
         // PUT api/<LoginController>/5

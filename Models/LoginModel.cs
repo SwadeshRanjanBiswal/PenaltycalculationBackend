@@ -9,6 +9,7 @@ namespace PenaltyCalculation.Models
     public class LoginModel
     {
         [MinLength(0)]
+        [Key]
         public string Username { get; set; }
         [MinLength(0)]
         public string Password { get; set; }

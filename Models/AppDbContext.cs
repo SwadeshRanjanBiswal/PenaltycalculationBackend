@@ -16,5 +16,6 @@ namespace WebApplication1.Models
         public DbSet<CountryWiseWeekend> Countrywiseweekend { get; set; }
         public DbSet<CountryWiseHoliday> Countrywiseholiday { get; set; }
         public DbSet<LoginModel> LoginModel { get; set; }
+        public DbSet<AccessLevelModel> AccessLevelModel { get; set; }
     }
 }
