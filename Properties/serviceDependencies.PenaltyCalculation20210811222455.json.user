@@ -1,0 +1,50 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": false,
+      "restoreTime": "2021-08-11T18:00:08.1825383Z"
+    }
+  },
+  "parameters": {
+    "PenaltyCalculation20210811222455.subscriptionId": {
+      "Name": "PenaltyCalculation20210811222455.subscriptionId",
+      "Type": "subscription",
+      "Value": "32874aba-39e4-44bb-a1af-46478a88fbd8"
+    },
+    "PenaltyCalculation20210811222455.resourceGroupName": {
+      "Name": "PenaltyCalculation20210811222455.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "NetworkWatcherRG"
+    },
+    "mssql1.resourceGroupLocation": {
+      "Name": "mssql1.resourceGroupLocation",
+      "Type": "location",
+      "Value": "eastus"
+    },
+    "PenaltyCalculation20210811222455.resourceGroupLocation": {
+      "Name": "PenaltyCalculation20210811222455.resourceGroupLocation",
+      "Type": null,
+      "Value": "eastus"
+    },
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "32874aba-39e4-44bb-a1af-46478a88fbd8"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "NetworkWatcherRG"
+    },
+    "PenaltyCalculation20210811222455.resourceName": {
+      "Name": "PenaltyCalculation20210811222455.resourceName",
+      "Type": null,
+      "Value": "PenaltyCalculation20210811222455"
+    },
+    "subscriptionId": {
+      "Name": "subscriptionId",
+      "Type": "subscription",
+      "Value": "32874aba-39e4-44bb-a1af-46478a88fbd8"
+    }
+  }
+}
