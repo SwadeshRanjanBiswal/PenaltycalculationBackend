@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\biswa\\source\\repos\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\biswa\\source\\repos\\WebApplication1\\PenaltycalculationBackend\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\biswa\\source\\repos\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\biswa\\source\\repos\\WebApplication1\\PenaltycalculationBackend\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\biswa\\source\\repos\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\biswa\\source\\repos\\WebApplication1\\PenaltycalculationBackend\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\biswa\\source\\repos\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "C:\\Users\\biswa\\source\\repos\\WebApplication1\\PenaltycalculationBackend\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\biswa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\biswa\\source\\repos\\WebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\biswa\\source\\repos\\WebApplication1\\PenaltycalculationBackend\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,10 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.17, )"
+            },
             "Microsoft.Data.SqlClient": {
               "target": "Package",
               "version": "[3.0.0, )"
@@ -64,6 +68,14 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[5.0.8, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
             }
           },
           "imports": [
@@ -84,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
